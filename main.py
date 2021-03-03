@@ -328,11 +328,11 @@ root = Tk()
 # set the title
 root.title("Musicolet")
 # set the geometry
-root.geometry('800x520')
+root.geometry('800x510')
 # set tkinter window not resizable
 root.resizable(height=False, width=False)
 # set the icon
-root.iconbitmap("icon/icon.ico")
+root.iconphoto(True, PhotoImage(file="icon/icon.png"))
 # create the StringVar for the status 
 status = StringVar()
 # set the initial status
@@ -381,7 +381,7 @@ control_frm = LabelFrame(master=root, text="Control Bar",font='Helvetica 11 bold
 control_frm.place(x=0, y=350, width=800, height=110)
 
 status_frm = LabelFrame(master=root, text="Song Status",font='Helvetica 11 bold italic',fg='DarkOrange4')
-status_frm.place(x=0, y=460, width=800, height=40)
+status_frm.place(x=0, y=460, width=800, height=50)
 
 
 
@@ -548,7 +548,7 @@ myscroll.place(x=130, y=50)
 # create label for start and end duration and place
 global dur_start, dur_end
 dur_start = Label(control_frm, text='00:00',font='Helvetica 11 bold italic',fg='dark violet')
-dur_start.place(x=80, y=50)
+dur_start.place(x=70, y=50)
 dur_end = Label(control_frm, text='00:00',font='Helvetica 11 bold italic',fg='dark violet')
 dur_end.place(x=650, y=50)
 
