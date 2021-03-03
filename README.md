@@ -46,4 +46,4 @@ python main.py
 Now you can enjoy Musicolet music player!
 
 ## Screenshot
-![image](screenshot/sample.jpg)
+![image](screenshot/sample.png)
