@@ -1,4 +1,4 @@
-# Musicolet--Music-Player
+# ***Musicolet--Music-Player***
 ## About
 This is a music player application named as ***Musicolet***. This have all the features required in a music player. It is made using python thinter.
 
@@ -11,7 +11,7 @@ This is a music player application named as ***Musicolet***. This have all the f
 |4|Stop|
 |5|Mute|
 |6|Adjust Volume|
-|7||Open Folder|
+|7|Open Folder|
 |8|Open File|
 |9|Select Particular Track From The Playlist|
 |10|Working Progress Bar|
@@ -34,9 +34,9 @@ To install all module you can install them mannually by
 ```
 pip install module-name
 ```
-in your cmd.
-i am listing all module name in requirements.txt
-or you can install all modules one command - 
+in your cmd.  
+i am listing all module name in requirements.txt   
+or you can install all modules one command -   
 first open your cmd in Musicolet Directory and then just simply run this command - 
 ```
 pip install -r requirements.txt
@@ -49,4 +49,4 @@ python main.py
 Now you can enjoy the Musicolet.
 
 ## Screenshot
-![image](sample.jpg)
+![image](screenshot/sample.jpg)
