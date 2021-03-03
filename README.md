@@ -18,14 +18,14 @@
 |11|Current Duration of track and Total duration of track|
 |12|Album Art|
 |13|Label to describe the buttons|
-|14|Userfriendly Interface|
+|14|User friendly Interface|
 |15|Menu for Shortcut Key|
 |16|Many Shortcut key Present|
 
 ## Install the Dependencies
 
-To use this beautiful muisc player - Musicolet, first you need to make sure, Python 3 is installed in your system.
-To install Python 3 in your machine you may checkout Python's official downloads [page](https://www.python.org/downloads/).
+To use this beautiful music player - Musicolet, first you need to make sure, Python 3 is installed in your system.
+To install Python 3 in your system you may checkout Python's official downloads [page](https://www.python.org/downloads/).
 
 ## How to Run
 
