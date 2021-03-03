@@ -1,6 +1,6 @@
 # ***Musicolet--Music-Player***
 ## About
-This is a music player application named as ***Musicolet***. This have all the features required in a music player. It is made using python thinter.
+This is a music player application named as ***Musicolet***. This have all the features required in a music player. It is made using python tkinter.
 
 ## Features
 | No | Name |
@@ -36,7 +36,7 @@ pip install module-name
 ```
 in your cmd.  
 i am listing all module name in requirements.txt   
-or you can install all modules one command -   
+or you can install all modules by run one command -   
 first open your cmd in Musicolet Directory and then just simply run this command - 
 ```
 pip install -r requirements.txt
