@@ -17,6 +17,11 @@ from tkinter import filedialog
 import os
 import time
 
+from tkinter import ttk  # Normal Tkinter.* widgets are not themed!
+from ttkthemes import ThemedTk
+from ttkthemes import ThemedStyle
+from ttkthemes import *
+
 # Set global value
 playing = False
 paused = False
@@ -30,6 +35,8 @@ file = ''
 
 
 ''' Create all required function '''
+
+
 
 # Function for load music folderwise
 def loadmusic():
@@ -302,7 +309,7 @@ def makealbumartimage(image_path):
 
 # function for about
 def about():
-    mb.showinfo('Musicolet', 'It is the basic music player with some advance feature made in Python.😎\nIt is created by Bikram Purkait with ❤.\nIt is completed on 03/03/2021.\nThanks for using the application.👍')
+    mb.showinfo('Musicolet', 'It is the basic music player with some advance features that made using python. \nIt is created by Bikram Purkait with ❤.\nThe Project was completed on 03 Mar 21\nThanks for Using Musicolet ')
 
 
 # function for shortcut key
@@ -312,7 +319,7 @@ def shortcut_key():
 
 # function for repeat 
 def repeat():
-    status.set('Feature Coming Soon.Please Stay with Us.')
+    status.set('Comming Soon')
 
 
 
@@ -336,7 +343,7 @@ root.iconbitmap("icon/icon.ico")
 # create the StringVar for the status 
 status = StringVar()
 # set the initial status
-status.set('❤Welcome to you in Musiocolet❤')
+status.set('Welcome to Project Musicolet ')
 
 
 
@@ -371,17 +378,17 @@ root.config(menu=mainmenu)
 
 
 # Create LabelFrame
-songtrack_frm = LabelFrame(master=root, text="Song Track",font='Helvetica 11 bold italic',fg='indian red')
+songtrack_frm = LabelFrame(master=root, text="Song Track",font='Sans-serif 13 bold ',fg='black')
 songtrack_frm.place(x=0, y=0, width=350, height=350)
 
-playlist_frm = LabelFrame(master=root, text="Playlist",font='Helvetica 11 bold italic',fg='peachpuff4')
+playlist_frm = LabelFrame(master=root, text="Playlist",font='Sans-serif 13 bold ',fg='black')
 playlist_frm.place(x=350, y=0, width=450, height=350)
 
-control_frm = LabelFrame(master=root, text="Control Bar",font='Helvetica 11 bold italic',fg='blue')
-control_frm.place(x=0, y=350, width=800, height=110)
+control_frm = LabelFrame(master=root, text="Control Bar",font='Sans-serif 13 bold ',fg='black')
+control_frm.place(x=0, y=330, width=800, height=200)
 
-status_frm = LabelFrame(master=root, text="Song Status",font='Helvetica 11 bold italic',fg='DarkOrange4')
-status_frm.place(x=0, y=460, width=800, height=40)
+status_frm = LabelFrame(master=root, text="status",font='Sans-serif 12 ',fg='black')
+status_frm.place(x=0, y=450, width=800, height=80)
 
 
 
@@ -389,14 +396,39 @@ status_frm.place(x=0, y=460, width=800, height=40)
 ''' Create a Load Button '''
 
 # create a style for the ttk.button
-s = ttk.Style()
+# s = ttk.Style()
 # configure ttk.button
-s.configure('TButton', font='Helvetica 10 bold italic')
-# Create load button to add folderwise song in playlist box
-loadbtn = ttk.Button(playlist_frm, text="Load Music", command=loadmusic,style='TButton')
-# pack the load button
-loadbtn.pack()
+#s.theme_use('vista') 
 
+s = ttk.Style()
+s.theme_use('xpnative')
+
+
+
+
+s.configure("cbutton.TCheckbutton", foreground='#f0f0f0', background='#f0f0f0', font=("Sans-serif", 12))
+
+s.theme_settings("default", 
+    {"TCheckbutton": {
+        "configure": {"padding": 2},
+        "map": {
+            "background": [("active", "#5C5C5C"),("!disabled", "#f0f0f0")],
+            "fieldbackground": [("!disabled", "#5C5C5C")],
+            "foreground": [("focus", "white"),("!disabled", "f0f0f0")], "indicatorcolor": [('selected','#f0f0f0'),('pressed','#f0f0f0')]
+            }
+        }
+    })
+
+
+
+
+
+# Create load button to add folderwise song in playlist box
+
+loadbtn = ttk.Button(playlist_frm, text="Load Music", command=loadmusic,style='TButton')
+loadbtn.grid(row = 1, column = 3, pady = 10, padx = 100 )
+
+loadbtn.pack()
 
 
 ''' Make a Scrollbar '''
@@ -406,7 +438,7 @@ x_scroll = ttk.Scrollbar(playlist_frm, orient=HORIZONTAL)
 y_scroll = ttk.Scrollbar(playlist_frm, orient=VERTICAL)
 # create the playlist box and set the xscrollcommand and yscrollcommand
 playlistbox = Listbox(playlist_frm, yscrollcommand=y_scroll.set,
-                      xscrollcommand=x_scroll.set, height=350,font='Helvetica 10 italic',fg='purple4')
+                      xscrollcommand=x_scroll.set, height=350,font='Helvetica 10 ',fg='black')
 # pack the horizontal and vertical scrollbar 
 x_scroll.pack(side=BOTTOM, fill=X)
 y_scroll.pack(side=RIGHT, fill=Y)
@@ -547,9 +579,9 @@ myscroll.place(x=130, y=50)
 
 # create label for start and end duration and place
 global dur_start, dur_end
-dur_start = Label(control_frm, text='00:00',font='Helvetica 11 bold italic',fg='dark violet')
+dur_start = Label(control_frm, text='00:00',font='Sans-serif 13 ',fg='black')
 dur_start.place(x=80, y=50)
-dur_end = Label(control_frm, text='00:00',font='Helvetica 11 bold italic',fg='dark violet')
+dur_end = Label(control_frm, text='00:00',font='Sans-serif 13 ',fg='black' )
 dur_end.place(x=650, y=50)
 
 
@@ -632,7 +664,7 @@ repeat_des = Label(control_frm, text='Repeat', relief='groove')
 
 
 # create the label for the status and pack it
-status_lbl = Label(status_frm, textvariable=status,font='Helvetica 11 bold italic',fg='dark green')
+status_lbl = Label(status_frm, textvariable=status,font='Roboto 12',)
 status_lbl.pack()
 
 
