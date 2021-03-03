@@ -1,6 +1,6 @@
 # ***Musicolet--Music-Player***
 ## About
-This is a music player application named as ***Musicolet***. This have all the features required in a music player. It is made using python tkinter.
+***Musicolet*** is a music player application. It is built in Python using tkinter and has all the features you would want or need in a music player. 
 
 ## Features
 | No | Name |
@@ -18,35 +18,32 @@ This is a music player application named as ***Musicolet***. This have all the f
 |11|Current Duration of track and Total duration of track|
 |12|Album Art|
 |13|Label to describe the buttons|
-|14|Userfriendly Interface|
+|14|User friendly Interface|
 |15|Menu for Shortcut Key|
 |16|Many Shortcut key Present|
 
 ## Install the Dependencies
 
-To use this beautiful Muiscplayer - Musicolet first you need to install python in your machine.
-to install python in your machine you may checkout on this [page](https://realpython.com/installing-python/) or google it.
+To use this beautiful music player - Musicolet, first you need to make sure, Python 3 is installed in your system.
+To install Python 3 in your system you may checkout Python's official downloads [page](https://www.python.org/downloads/).
 
 ## How to Run
 
-To run this this Musicplayer you need to install some python module.
-To install all module you can install them mannually by
+First thing you need to do is to clone the repository or download the source code. Run the following command in your terminal to clone the repository:
 ```
-pip install module-name
+git clone https://github.com/IamBikramPurkait/Musicolet--Music-Player.git
 ```
-in your cmd.  
-i am listing all module name in requirements.txt   
-or you can install all modules by run one command -   
-first open your cmd in Musicolet Directory and then just simply run this command - 
+Next you have to install all the dependent modules which I have listed in ```requirements.txt``` file.
+To install the required modules simply run the following inside your terminal: 
 ```
+cd Musicolet--Music-Player
 pip install -r requirements.txt
 ```
-Its automatically install all the python modules and you are ready to go..
-Now you just open your cmd in Musicolet Directory and just run this command - 
+Finally to run the music player all you have to do is to run the ```main.py``` file as shown:
 ```
 python main.py
 ```
-Now you can enjoy the Musicolet.
+Now you can enjoy Musicolet music player!
 
 ## Screenshot
 ![image](screenshot/sample.jpg)
