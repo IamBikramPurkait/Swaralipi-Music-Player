@@ -1,5 +1,5 @@
 '''
-Music Player Using Tkinter - Musicolet
+Music Player Using Tkinter - Swaralipi
 Author : Bikram Purkait
 Completed on : 03/03/2021
 '''
@@ -302,7 +302,7 @@ def makealbumartimage(image_path):
 
 # function for about
 def about():
-    mb.showinfo('Musicolet', 'It is the basic music player with some advance feature made in Python.😎\nIt is created by Bikram Purkait with ❤.\nIt is completed on 03/03/2021.\nThanks for using the application.👍')
+    mb.showinfo('Swaralipi', 'It is the basic music player with some advance feature made in Python.😎\nIt is created by Bikram Purkait with ❤.\nIt is completed on 03/03/2021.\nThanks for using the application.👍')
 
 
 # function for shortcut key
@@ -326,7 +326,7 @@ root = Tk()
 
 
 # set the title
-root.title("Musicolet")
+root.title("Swaralipi")
 # set the geometry
 root.geometry('800x510')
 # set tkinter window not resizable
