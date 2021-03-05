@@ -1,6 +1,6 @@
-# ***Musicolet--Music-Player***
+# ***Swaralipi--Music-Player***
 ## About
-***Musicolet*** is a music player application. It is built in Python using tkinter and has all the features you would want or need in a music player. 
+***Swaralipi*** is a music player application. It is built in Python using tkinter and has all the features you would want or need in a music player. 
 
 ## Features
 | No | Name |
@@ -24,7 +24,7 @@
 
 ## Install the Dependencies
 
-To use this beautiful music player - Musicolet, first you need to make sure, Python 3 is installed in your system.
+To use this beautiful music player - Swaralipi, first you need to make sure, Python 3 is installed in your system.
 To install Python 3 in your system you may checkout Python's official downloads [page](https://www.python.org/downloads/).
 
 ## How to Run
@@ -36,7 +36,7 @@ git clone https://github.com/IamBikramPurkait/Musicolet--Music-Player.git
 Next you have to install all the dependent modules which I have listed in ```requirements.txt``` file.
 To install the required modules simply run the following inside your terminal: 
 ```
-cd Musicolet--Music-Player
+cd Swaralipi--Music-Player
 pip install -r requirements.txt
 ```
 Finally to run the music player all you have to do is to run the ```main.py``` file as shown:
