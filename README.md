@@ -1,18 +1,10 @@
 <a href="https://dev.to/iambikrampurkait">
   <img src="https://d2fltix0v2e0sb.cloudfront.net/dev-badge.svg" alt="Bikram Purkait's DEV Profile" height="30" width="30">
-<<<<<<< HEAD
 </a>
-
-# ***Swaralipi--Music-Player***
-## About
-***Swaralipi*** is a music player application. It is built in Python using tkinter and has all the features you would want or need in a music player. 
-=======
-</a> 
->>>>>>> 5c7e741e2a8bd0f4d63a2fd98ad505d77e032499
 
  # ***Swaralipi--Music-Player***   
 
- ## About     
+ ## About   
  ***Swaralipi*** is a music player application. It is built in Python using tkinter and has all the features you would want or need in a music player.     
 
 ## Features   
