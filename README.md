@@ -52,3 +52,6 @@ Now you can enjoy Swaralipi music player!
 
 ## Screenshot
 ![image](screenshot/sample.jpg)
+
+## Credit
+Inspire from [Hardeep Singh](https://github.com/Hardeepsingh980/DeePlayer-Music-Player)
