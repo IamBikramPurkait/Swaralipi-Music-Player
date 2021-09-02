@@ -2,10 +2,10 @@
   <img src="https://d2fltix0v2e0sb.cloudfront.net/dev-badge.svg" alt="Bikram Purkait's DEV Profile" height="30" width="30">
 </a>
 
- # ***Swaralipi-Music-Player***   
+ # ***E-Newspaper***   
 
  ## About   
- ***Swaralipi*** is a music player application. It is built in Python using tkinter and has all the features you would want or need in a music player.     
+ ***E-Newspaper*** is a music player application. It is built in Python using tkinter and has all the features you would want or need in a music player.     
 
 ## Features   
 | No | Name |
@@ -53,5 +53,3 @@ Now you can enjoy Swaralipi music player!
 ## Screenshot
 ![image](screenshot/sample.jpg)
 
-## Credit
-Inspire from [Hardeep Singh](https://github.com/Hardeepsingh980/DeePlayer-Music-Player)
